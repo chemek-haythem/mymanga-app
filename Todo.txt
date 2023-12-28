@@ -1,0 +1,8 @@
+install react router - done
+implement react router  - done
+app layout - 50%
+Data - done
+create componenets
+component products 
+componet basket 
+context api/ provider

@@ -1,5 +1,5 @@
 import onepiece from '../assets/onepiece.jpg';
-import naruto from '../assets/naruto.jpg';
+import naruto from '../assets/Naruto.jpg';
 import attackOnTitan from '../assets/attackontitan.jpg';
 import myHeroAcademia from '../assets/myheroacademia.jpg';
 import dragonBall from '../assets/dragonball.jpg';
@@ -34,7 +34,7 @@ import kaguyaSama from '../assets/kaguyasama.jpeg';
 import beastars from '../assets/beastars.jpeg';
 import goldenKamuy from '../assets/goldenkamuy.jpeg';
 import silentVoice from '../assets/silentvoice.jpeg';
-import seraphOfTheEnd from '../assets/seraphoftheend.jepg';
+import seraphOfTheEnd from '../assets/seraphoftheend.jpeg';
 import myYouthRomanticComedy from '../assets/myyouthromanticcomedy.jpeg';
 import vagabond from '../assets/vagabond.jpeg';
 import berserk from '../assets/berserk.jpg';

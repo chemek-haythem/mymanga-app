@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useLoaderData } from "react-router-dom"
 import MangaCard from "../../components/MangaCard/MangaCard";
 
-
 const MangaList = () => {
     const mangaListData = useLoaderData();
     return (
@@ -14,6 +13,7 @@ const MangaList = () => {
                 description={manga.description}
                 image={manga.image}
             />
+            <span>Price : {manga.price} Dt</span>
           </Link>
         ))}
       </div>

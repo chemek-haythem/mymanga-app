@@ -6,7 +6,7 @@ export default function MangaDetails() {
   const manga = useLoaderData()
 
   return (
-    <div className="career-details" key={id}>
+    <div className="manga-details" key={id}>
       <h2>Details for {manga.title}</h2>
         <MangaCard
             title={manga.title}

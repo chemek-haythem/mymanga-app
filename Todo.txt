@@ -6,3 +6,6 @@ create componenets
 component products 
 componet basket 
 context api/ provider
+
+add start db base
+json-server -p 400 -w ./data/db.json

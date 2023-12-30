@@ -18,6 +18,7 @@ import MangaList from './modules/MangaList/MangaList';
 import MangaDetails from './modules/MangaList/MangaDetails';
 import MangaListLayout from './layouts/MangaListLayout';
 import { MangaDetailsLoader, MangaListDataLoader } from './modules/MangaList/MangaLoader';
+import { ShoppingCardContextProvider } from './context/ShoppingCardContext';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -53,7 +54,9 @@ const router = createBrowserRouter(
 
 const App = () => {
   return (
-      <RouterProvider router={router} />
+      <ShoppingCardContextProvider>
+        <RouterProvider router={router} />
+      </ShoppingCardContextProvider>
   );
 }
 

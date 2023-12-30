@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import ShoppingButton from "../components/ShoppingButton/ShoppingButton";
+import { ShoppingCardContext } from "../context/ShoppingCardContext";
 
 const RootLayout = () => {
+    const { stateValue } = useContext(ShoppingCardContext);
     return (
         <div className="root-layout">
             <header>
@@ -14,7 +16,7 @@ const RootLayout = () => {
                     <NavLink to="Basket">Basket</NavLink>
                     <NavLink to="About">About</NavLink>
                     <NavLink to="Help">Help</NavLink>
-                    <ShoppingButton />
+                    <ShoppingButton itemNum={stateValue}/>
                 </nav>
             </header>
             <main>

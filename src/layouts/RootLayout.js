@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import ShoppingButton from "../components/ShoppingButton/ShoppingButton";
 
 const RootLayout = () => {
     return (
@@ -13,6 +14,7 @@ const RootLayout = () => {
                     <NavLink to="Basket">Basket</NavLink>
                     <NavLink to="About">About</NavLink>
                     <NavLink to="Help">Help</NavLink>
+                    <ShoppingButton />
                 </nav>
             </header>
             <main>

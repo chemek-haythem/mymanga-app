@@ -3,20 +3,19 @@ import { Button } from "antd";
 import { ShoppingOutlined } from "@ant-design/icons";
 
 const ShoppingButton = ({itemNum}) => {
-    console.log(itemNum);
     return (
         <>
             <Button
                 shape="circle"
                 icon={<ShoppingOutlined />}
                 style={{ backgroundColor: 'grey', borderColor: 'grey', color: 'white' }}
-            
             >
+                {itemNum.length !== 0 && (
                 <div
                     style={{
                     position: 'absolute',
-                    bottom: '10px', // Adjust as needed to position the circle
-                    right: '-10px', // Adjust as needed to position the circle
+                    bottom: '10px',
+                    right: '-10px',
                     backgroundColor: 'red',
                     width: '20px',
                     height: '20px',
@@ -28,11 +27,11 @@ const ShoppingButton = ({itemNum}) => {
                     fontSize: '12px',
                     }}
                 >
-                    {itemNum}
+                    {itemNum.length}
                 </div>
+                )}
             </Button>
         </>
-
     )
 }
 

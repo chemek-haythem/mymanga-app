@@ -11,6 +11,6 @@ export const MangaDetailsLoader = async ({ params }) => {
     const { id } = params
   
     const res = mangaData[id - 1];
-    console.log(res);
+    // console.log(res);
     return res
 }

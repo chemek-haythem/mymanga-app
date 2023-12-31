@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, { useContext} from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { Button, Col, Row } from "antd";
 import MangaCard from "../../components/MangaCard/MangaCard";
@@ -20,12 +20,10 @@ const addToCartButtonStyle = {
 
 const MangaList = () => {
   const mangaListData = useLoaderData();
-  const [count, setCount] = useState(0);
-  const { stateValue, setStateValue } = useContext(ShoppingCardContext);
-  const handleOnAddTocartClick = () => {
-    console.log("handleOnAddTocartClick");
-    setStateValue((prev) => prev + 1);
-    setCount((prev) => prev + 1);
+  const { setStateValue } = useContext(ShoppingCardContext);
+
+  const handleOnAddTocartClick = (manga) => {
+    setStateValue((prevItems) => [...prevItems, manga]);
   };
 
   const chunkArray = (array, chunkSize) => {
@@ -57,7 +55,7 @@ const MangaList = () => {
                   <p>Price: {manga.price}</p>
                 </Col>
                 <Col span={8} offset={0}>
-                  <Button onClick={handleOnAddTocartClick} style={{ ...addToCartButtonStyle, alignSelf: 'flex-start' }}>
+                  <Button onClick={() => handleOnAddTocartClick(manga)} style={{ ...addToCartButtonStyle, alignSelf: 'flex-start' }}>
                     Add To Cart
                   </Button>
                 </Col>

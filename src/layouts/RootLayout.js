@@ -13,10 +13,9 @@ const RootLayout = () => {
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="MangaList">MangaList</NavLink>
                     <NavLink to="Login">Login</NavLink>
-                    <NavLink to="Basket">Basket</NavLink>
                     <NavLink to="About">About</NavLink>
                     <NavLink to="Help">Help</NavLink>
-                    <ShoppingButton itemNum={stateValue}/>
+                    <NavLink to="Basket"><ShoppingButton itemNum={stateValue}/></NavLink>
                 </nav>
             </header>
             <main>

@@ -1,10 +1,11 @@
 import React from 'react';
+import './home.css';
 
 const Home = () => {
     return (
         <div>        
             <header>
-                <h1>Welcome to MManga Haven - Your Gateway to Endless Manga Adventures!</h1>
+                <h1>Welcome to Manga Haven - Your Gateway to Endless Manga Adventures!</h1>
             </header>
             <main>
                 <section>

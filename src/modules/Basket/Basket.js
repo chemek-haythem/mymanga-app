@@ -23,15 +23,11 @@ const Basket = () => {
     const { setStateValue } = useContext(ShoppingCardContext);
 
     const handleOnRemoveClick = (mangaToRemove) => {
-        // Find the index of the manga item to be removed from state based on its id
         const indexToRemove = stateValue.findIndex(manga => manga.id === mangaToRemove.id);  
         if (indexToRemove !== -1) {
-          // Create a copy of the state array
           const updatedState = [...stateValue];
-          // Remove the item at the found index
           updatedState.splice(indexToRemove, 1);
-          // console.log(updatedState); // Check if the correct item is removed
-          setStateValue(updatedState); // Update the state
+          setStateValue(updatedState); 
         }
     };
 

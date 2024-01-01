@@ -47,6 +47,7 @@ import reincarnatedSlime from '../assets/reincarnatedslime.jpeg';
 import madeInAbyss from '../assets/madeinabyss.jpeg';
 import magicHighSchool from '../assets/magichighschool.jpeg';
 import konosuba from '../assets/konosuba.jpeg';
+import OneOuts from '../assets/OneOuts.jpeg';
 
 
 const mangaData = [
@@ -96,10 +97,12 @@ const mangaData = [
   { id: 44, title: 'Platinum End', price: 12.29, image: platinumEnd, description: 'Un garçon reçoit des pouvoirs angéliques et doit participer à une compétition mortelle.' },
   { id: 45, title: 'Grand Blue', price: 11.69, image: grandBlue, description: 'Une comédie sur la vie universitaire, l amitié et la plongée.' },
   { id: 46, title: 'The Quintessential Quintuplets', price: 10.59, image: quintuplets, description: 'Un lycéen donne des cours particuliers à des quintuplés aux personnalités distinctes.' },
-  { id: 47, title: 'That Time I Got Reincarnated as a Slime', price: 12.09, image: reincarnatedSlime, description: 'Satoru Mikami renaît dans un monde fantastique en tant que slime puissant.' },
-  { id: 48, title: 'Made in Abyss', price: 9.99, image: madeInAbyss, description: 'Exploration d un abîme mystérieux et dangereux.' },
-  { id: 49, title: 'The Irregular at Magic High School', price: 11.19, image: magicHighSchool, description: 'Frères et sœurs naviguent au lycée dans un monde de magie et de technologie.' },
-  { id: 50, title: 'KonoSuba: God  Blessing on This Wonderful World!', price: 10.39, image: konosuba , description: 'Un conte comique d aventuriers dans un monde fantastique.' },
+  { id: 47, title: 'That Time I Got Reincarnated as a Slime', price: 12.09 , image: reincarnatedSlime, description: 'Satoru Mikami renaît dans un monde fantastique en tant que slime puissant.' },
+  { id: 48, title: 'Made in Abyss', price: 9.99 , image: madeInAbyss, description: 'Exploration d un abîme mystérieux et dangereux.' },
+  { id: 49, title: 'The Irregular at Magic High School', price: 11.19 , image: magicHighSchool, description: 'Frères et sœurs naviguent au lycée dans un monde de magie et de technologie.' },
+  { id: 50, title: 'KonoSuba: God  Blessing on This Wonderful World!', price: 10.39 , image: konosuba , description: 'Un conte comique d aventuriers dans un monde fantastique.' },
+  { id: 51, title: 'One Outs', price: 9.50 , image: OneOuts, description: 'Dive into the intense world of baseball gambling with Tokuchi Toua.'}
+  
 ];
 
 export default mangaData;
